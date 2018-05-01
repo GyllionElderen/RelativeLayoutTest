@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RelativeLayoutTest.Views.MainPage"
+             Title="{Binding Title}">
+
+    <RelativeLayout BackgroundColor="Yellow"
+                    WidthRequest="250"
+                    HeightRequest="250"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+
+        <Button Text="Click me!"
+                Command="{Binding TestCommand}"
+                WidthRequest="100"
+                HeightRequest="50"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=X,
+                                                                  Factor=0}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                                  Property=Y,
+                                                                  Factor=1.6}"/>
+
+    </RelativeLayout>
+
+</ContentPage>
