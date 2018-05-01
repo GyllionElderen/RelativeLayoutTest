@@ -12,7 +12,7 @@
 
         <Button Text="Click me!"
                 Command="{Binding TestCommand}"
-                WidthRequest="100"
+                WidthRequest="110"
                 HeightRequest="50"
                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
                                                                   Property=X,
